@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <link rel ="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+</head>
+<body>
+    <div class="pagina">
+        <div class="cv_sx">
+            <div ><img id="foto" src="davide_SF.jpg" alt=""></div>
+            <div id="contatti">
+                <h3>Contatti</h3>
+                <ul>
+                    <li>davide.tosches@gmail.com</li>
+                    <li>Via P.Sacchi 52, Torino</li>
+                    <li>(+39) 320 82 52 930</li>
+                </ul>
+                
+            </div> 
+            <div id="lingue">
+                <h3>Lingue</h3>
+                <div class="lingua">
+                    <h4>Italiano</h4>
+                    <div class="livello">
+                        <div class="ita">Madrelingua </div>
+                    </div>
+                </div>
+                <div class="lingua">
+                    <h4>Inglese</h4>
+                    <div class="livello">
+                        <div class="eng">Fluent </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="cv_dx">
+            <h2>Esperienza lavorativa</h2>
+            <div class="sezione">
+                <div class="intestazione">
+                    <div class="titolo">
+                        Studio Fieschi & soci
+                    </div>
+                    <p>2017 - in corso</p>
+                </div>
+                <div class="contenuto" class="SF">
+                    dfddfsdfsfsfsfsfsd
+                </div>
+            </div>
+            <h2>Formazione</h2>
+            <div class="sezione">
+                <div class="intestazione">
+                    <div class="titolo">
+                        Laurea magistrale in Ingegneria Chimica e dei processi sostenibili
+                    </div>
+                    <p>2014/17</p>                                
+                </div>
+                <div class="contenuto" class="SF">
+                    Tesi: Aqueous Phase Reforming of sodium alginate for H<sub>2</sub> production
+                </div>    
+            </div>
+            <div class="sezione">
+                <div class="intestazione">
+                    <div class="titolo">
+                        Laurea triennale in Ingegneria Chimica e alimentare
+                    </div>
+                    <p>2010/14</p>
+                </div>
+                <div class="contenuto" class="SF">
+                    dfddfsdfsfsfsfsfsd
+                </div>    
+            </div>
+            <div class="sezione">
+                <div class="intestazione">
+                    <div class="titolo">
+                        Corso di formazione "Talenti per l'impresa"
+                    </div>
+                    <p>2018</p>
+                </div>
+                <div class="contenuto" class="SF">
+                    dfddfsdfsfsfsfsfsd
+                </div>    
+            </div>
+        </div>
+    </div>
+<script>
+    var acc = document.getElementsByClassName("intestazione");
+    var i;
+            
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+            });
+        }
+</script>
+</body>
+
+</html >

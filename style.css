@@ -1,0 +1,94 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    
+}
+.pagina {
+    display: flex;
+    margin: auto;
+    background-color: #ddd;
+}
+.cv_sx {
+    background-color: rgb(115, 154, 224);
+    border: 1px solid slategray;
+    color: #fff;
+    height: 800px;
+}
+
+.cv_dx {
+    background-color: #fff;
+    width: 600px;
+    margin: 10px;
+}
+#foto {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: grey 5px 5px 5px;
+    border-radius:100px;
+}
+.lingua {
+    margin:10px 0px 10px 0px;
+}
+h2 {
+    padding: 0  px;
+}
+h3 {
+    border-bottom: white solid 1px;
+    margin-top: 5px;
+    padding: 0px;
+}
+p {
+    flex: right;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: small;
+    font-style: italic;
+}
+#contatti, #lingue {
+    border: 1px solid slategray;
+    min-height: 100px;
+}
+.sezione {
+    border: 0px black solid;
+    padding: 5px;
+    min-height: 80px;
+}
+.intestazione {
+    display: flex;
+    padding-bottom: 5px;
+    width: 90%;
+}
+
+.titolo {
+    width: auto;
+}
+
+.intestazione::after {
+    content:"+";
+    float: right;
+}
+
+.contenuto {
+    display: none;
+}
+
+.livello {
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+}
+
+.ita, .eng {
+    background-color: navy;
+    text-align: start;
+    color: white;
+}
+.eng {
+    width: 80%;
+}
